@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Movies Survey Form</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-compatible" content="IE-edge">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<link type="text/css" rel="stylesheet" href="main.css">
+ </script>
+</head>
+<body>
+<center>
+
+<header>
+<h1>Take a survey about movies</h1>
+<p>Give us information about yourself</p>
+</header>
+<br><br><br>
+
+<div class="container">
+<form action="method="get" name="checkform" onsubmit="return validate()">     
+<div class="input-fields">
+<input type="text"name="name" required  placeholder="Enter your name" id="name">
+</div><br>
+
+
+<div class="input-fields">
+<input type="text"name="surname" required placeholder="Enter your surname" id="surname">
+</div><br>
+
+<div class="input-fields">
+<input type="number"name="Age" min="18" max="30" required placeholder="Enter your age" id="age"></div><br>
+
+<div class="input-fields">
+<input type="text"name="email" required placeholder="E
+nter your email" id="email">
+</div><br>
+
+<div class="input-fields">
+<select id="dropdown">
+<option>Select your gender:</option>
+<option value="1">Male</option>
+<option value="2">female</option>
+</select>
+</div><br><br>
+
+<h2>Do you watch movies?</h2>
+<br>
+
+<div class="radio-buttons">
+<ul>
+<li><input type="radio" name="radioMovies" id="yesMovies" value="option1" required>
+<label for="yesMovies">yes</label></li>
+
+<li><input type="radio" name="radioMovies" id="noMovies" value="option2" required>
+<label for="noMovies">no</label></li>
+
+<li><input type="radio" name="radioMovies" id="sometimesMovies" value="option3">
+<label for="sometimesMovie">sometimes</label></li>
+
+<li><input type="radio" name="radioMovies" id="neverMovies" value="option4" required>
+<label for="neverMovie">never</label></li>
+</ul>
+</div><br><br>
+
+<h2>Choose your favorite movies</h2>
+<br>
+
+<div class="input-fields">
+<select id="dropdown">
+<option>--Select FavMovies--</option>
+<option value="1">Horro</option>
+<option value="2">Action</option>
+<option value="3">Comedy</option>
+<option value="4">Cartoon</option>
+<option value="5">Adventure</option>
+</select>
+</div><br><br>
+
+<h2>Which movies you like to watch?</h2><br>
+
+
+<div class="checkbox-buttons">
+<ul>
+<li><input type="checkbox"name="the nun" id="checkbox">
+<label for="The nun">The nun</label></li>
+
+<li><input type="checkbox" name="avengers" id="checkbox">
+<label for="Avengers">Avengers</label></li>
+
+<li><input type="checkbox" name="3idiot" id="checkbox">
+<label for="3Idiot">3Idiot</label></li>
+
+<li><input type="checkbox" name="fast and the furious" id="checkbox">
+<label for="Fast and the furious">Fast And The Furious</label></li>
+
+<li><input type="checkbox" name="Kubo the two string" id="checkbox">
+<label for="Kubo the two strings">Kubo The Two Strings</label></li>
+
+<li><input type="checkbox" name="The Hobbit" id="checkbox">
+<label for="The Hobbit">The Hobbit</label></li>
+</ul>
+</div><br><br>
+
+<h2>What other movies you like to watch?</h2><br>
+
+
+<div class="comments-box">
+<textarea id="type"text" name" placeholder="Type other movies you like to watch" required></textarea>
+</div><br>
+
+<div class="button">
+<input id="submit"type="submit" value="Submit" onclick="return validate()">
+</div>
+</form>
+</div>
+</center>
+</body>
+</html>
+
+
+
+
+
